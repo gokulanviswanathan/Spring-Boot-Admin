@@ -21,4 +21,6 @@ Implementation covers,
 
 This project is leveraged from the repository "springboot.hotelmgmt" - Simple REST APIs for Hotel Management System using Spring Boot 1.5
 
-Link to repository : https://github.com/GokulanYahoo/springboot.hotelmgmt
+Link to legacy repository : https://github.com/GokulanYahoo/springboot.hotelmgmt
+
+Link to Spring Boot Admin wiki page : https://github.com/GokulanYahoo/Spring-BootAdmin/wiki/Spring-Boot-Admin
