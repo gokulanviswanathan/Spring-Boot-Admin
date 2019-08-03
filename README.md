@@ -23,4 +23,4 @@ This project is leveraged from the repository "springboot.hotelmgmt" - Simple RE
 
 Link to legacy repository : https://github.com/GokulanYahoo/springboot.hotelmgmt
 
-Link to Spring Boot Admin wiki page : https://github.com/GokulanYahoo/Spring-BootAdmin/wiki/Spring-Boot-Admin
+Link to Spring Boot Admin wiki page : https://github.com/GokulanYahoo/Spring-BootAdmin/wiki/Spring-Boot-Admin-Documentation
