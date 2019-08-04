@@ -10,50 +10,115 @@ import javax.persistence.Table;
 import org.hibernate.annotations.FilterDef;
 import org.hibernate.annotations.ParamDef;
 
+/**
+ * The Class Hotel.
+ * 
+ * @author Gokulan
+ */
 @Entity
 @Table(name = "hotel")
-@FilterDef(name="filterByCity", parameters={@ParamDef(name="city", type="string")})
+@FilterDef(name = "filterByCity", parameters = { @ParamDef(name = "city", type = "string") })
 public class Hotel implements Serializable {
-	private static final long serialVersionUID = 1L;
-	@Id
-	@Column(name = "id")
-	private String id;
-	@Column(name = "name")
-	private String name;
-	@Column(name = "city")
-	private String city;
-	@Column(name = "state")
-	private String state;
 
-	public String getId() {
-		return id;
-	}
+    /**
+     * The Constant serialVersionUID.
+     */
+    private static final long serialVersionUID = 1L;
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    /**
+     * The id.
+     */
+    @Id
+    @Column(name = "id")
+    private String id;
 
-	public String getName() {
-		return name;
-	}
+    /**
+     * The name.
+     */
+    @Column(name = "name")
+    private String name;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * The city.
+     */
+    @Column(name = "city")
+    private String city;
 
-	public String getCity() {
-		return city;
-	}
+    /**
+     * The state.
+     */
+    @Column(name = "state")
+    private String state;
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    /**
+     * Gets the id.
+     *
+     * @return the id
+     */
+    public String getId() {
+	return id;
+    }
 
-	public String getState() {
-		return state;
-	}
+    /**
+     * Sets the id.
+     *
+     * @param id the new id
+     */
+    public void setId(String id) {
+	this.id = id;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    /**
+     * Gets the name.
+     *
+     * @return the name
+     */
+    public String getName() {
+	return name;
+    }
+
+    /**
+     * Sets the name.
+     *
+     * @param name the new name
+     */
+    public void setName(String name) {
+	this.name = name;
+    }
+
+    /**
+     * Gets the city.
+     *
+     * @return the city
+     */
+    public String getCity() {
+	return city;
+    }
+
+    /**
+     * Sets the city.
+     *
+     * @param city the new city
+     */
+    public void setCity(String city) {
+	this.city = city;
+    }
+
+    /**
+     * Gets the state.
+     *
+     * @return the state
+     */
+    public String getState() {
+	return state;
+    }
+
+    /**
+     * Sets the state.
+     *
+     * @param state the new state
+     */
+    public void setState(String state) {
+	this.state = state;
+    }
 }

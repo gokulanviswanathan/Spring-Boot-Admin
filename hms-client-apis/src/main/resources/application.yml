@@ -1,13 +1,14 @@
 server:
   port: 9001
-
+  ssl:
+    enabled: false
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: true
     lease:
@@ -25,7 +26,21 @@ spring:
       max-active: 50
       max-idle: 20
       min-idle: 15
-      
+# Spring Boot Admin client registeration      
+  boot:
+    admin:
+      client:
+        url: http://localhost:8761/admin
+        username: admin
+        password: admin
 management:
   security:
     enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  exposure:
+    health:
+      show-details: always
+    

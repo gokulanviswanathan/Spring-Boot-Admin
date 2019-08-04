@@ -28,19 +28,39 @@ import com.hotelmgmt.filter.SearchCriteria;
 import com.hotelmgmt.repository.HotelRepository;
 import com.hotelmgmt.util.HotelMgmtUtil;
 
+/**
+ * The Class HotelMgmtController.
+ * 
+ * @author Gokulan
+ */
 @Controller
 @RequestMapping("hotel")
 public class HotelMgmtController {
 
+    /**
+     * The hotel repository.
+     */
     @Autowired
     HotelRepository hotelRepository;
 
+    /**
+     * Gets the hotels.
+     *
+     * @param pageable the pageable
+     * @return the hotels
+     */
     @GetMapping("getHotels")
     @ResponseBody
     public Object getHotels(Pageable pageable) {
 	return hotelRepository.findAll(pageable);
     }
 
+    /**
+     * Adds the hotel.
+     *
+     * @param hotelRequest the hotel request
+     * @return the string
+     */
     @PostMapping("addHotel")
     @ResponseBody
     public String addHotel(@RequestBody HotelRequest hotelRequest) {
@@ -56,6 +76,12 @@ public class HotelMgmtController {
 	return hotel.getId() + HotelMgmtConstants.ADD_SUCCESS;
     }
 
+    /**
+     * Delete hotel.
+     *
+     * @param hotelId the hotel id
+     * @return the string
+     */
     @DeleteMapping("/{hotelId}/deleteHotel")
     @ResponseBody
     public String deleteHotel(@PathVariable("hotelId") String hotelId) {
@@ -70,6 +96,13 @@ public class HotelMgmtController {
 	return hotelId + HotelMgmtConstants.DELETE_SUCCESS;
     }
 
+    /**
+     * Patch hotel.
+     *
+     * @param hotelId      the hotel id
+     * @param hotelRequest the hotel request
+     * @return the string
+     */
     @PatchMapping("/{hotelId}/patchHotel")
     @ResponseBody
     public String patchHotel(@PathVariable("hotelId") String hotelId, @RequestBody HotelRequest hotelRequest) {
@@ -102,6 +135,13 @@ public class HotelMgmtController {
 	return hotelId + HotelMgmtConstants.PATCH_SUCCESS;
     }
 
+    /**
+     * Gets the hotels with filter.
+     *
+     * @param filterValue the filter value
+     * @param pageable    the pageable
+     * @return the hotels with filter
+     */
     @GetMapping("getHotelsWithFilter")
     @ResponseBody
     public Object getHotelsWithFilter(@RequestParam(value = "filterBy") String filterValue, Pageable pageable) {
@@ -112,6 +152,13 @@ public class HotelMgmtController {
 	return hotelRepository.findAll(spec, pageable);
     }
 
+    /**
+     * Gets the hotels with multiple filter.
+     *
+     * @param cities   the cities
+     * @param pageable the pageable
+     * @return the hotels with multiple filter
+     */
     @GetMapping("getHotelsWithMultipleFilter")
     @ResponseBody
     public Object getHotelsWithMultipleFilter(@RequestParam("city") String[] cities, Pageable pageable) {

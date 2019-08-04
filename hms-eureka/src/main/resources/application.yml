@@ -1,10 +1,14 @@
 server:
   port: ${PORT:8761}
+  ssl:
+    enabled: false
 
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
 
@@ -12,3 +16,25 @@ eureka:
 logging:
   level:
     com.hms.springeurekaserver: DEBUG
+    
+#Spring Boot Admin server
+spring:
+  boot:
+    admin:
+      context-path: /admin
+      ui:
+        brand: HMS Admin
+        title: HMS Admin
+  security:
+    user:
+      name: admin
+      password: admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  exposure:
+    health:
+      show-details: always
+    

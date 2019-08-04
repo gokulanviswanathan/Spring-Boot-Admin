@@ -10,13 +10,18 @@ import org.springframework.stereotype.Repository;
 
 import com.hotelmgmt.entity.Hotel;
 
+/**
+ * The Interface HotelRepository.
+ * 
+ * @author Gokulan
+ */
 @Repository
 public interface HotelRepository extends JpaRepository<Hotel, String>, JpaSpecificationExecutor<Hotel> {
 
-	/*
-	 * Multiple filter by City using SQL IN clause in the SELECT query
-	 * 
-	 * SAMPLE QUERY: SELECT * FROM Hotel WHERE city IN ('Trivandrum', 'Chennai')
-	 */
-	Page<Hotel> findByCityIn(List<String> cities, Pageable pageable);
+    /*
+     * Multiple filter by City using SQL IN clause in the SELECT query
+     * 
+     * SAMPLE QUERY: SELECT * FROM Hotel WHERE city IN ('Trivandrum', 'Chennai')
+     */
+    Page<Hotel> findByCityIn(List<String> cities, Pageable pageable);
 }
