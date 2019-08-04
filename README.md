@@ -10,11 +10,11 @@ Pre-requisites
 1. Knowledge on Spring Boot configuration
 2. Knowledge on Hotel Management System (how customer will be using application to book hotels online)
 
---------------
-Implementation
---------------
+------------------------
+Focus of this Repository
+------------------------
 
-Implementation covers,
+Development Engineer who is checking out this code should be able to learn these topics,
 
 1. Spring Boot Admin tool
 2. Spring Boot
@@ -25,3 +25,12 @@ This project is leveraged from the repository "springboot.hotelmgmt" - Simple RE
 
 Link to legacy repository : https://github.com/GokulanYahoo/springboot.hotelmgmt
 
+------------------------
+Reaching out Contributor
+------------------------
+
+Gokulan Viswanathan
+
+*gokulan90@gmail.com*
+
+*https://www.facebook.com/gokulan90*
