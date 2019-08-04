@@ -1,4 +1,4 @@
-# Spring-BootAdmin
+# Spring Boot Admin
 Repository provides sample implementation of Spring's Management and Monitoring Tool (Spring Boot Admin)
 
 Documentation: https://github.com/GokulanYahoo/Spring-BootAdmin/wiki/Spring-Boot-Admin-Documentation
