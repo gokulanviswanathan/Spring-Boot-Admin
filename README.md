@@ -23,7 +23,7 @@ Development Engineer who is checking out this code should be able to learn these
 
 This project is leveraged from the repository "springboot.hotelmgmt" - Simple REST APIs for Hotel Management System using Spring Boot 1.5
 
-Link to legacy repository : https://github.com/GokulanYahoo/springboot.hotelmgmt
+Link to legacy repository : https://github.com/gokulanviswanathan/Spring-Boot-Hotel-Management-System
 
 ------------------------
 Reaching out Contributor
