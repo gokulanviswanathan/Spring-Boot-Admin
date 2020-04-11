@@ -25,9 +25,9 @@ This project is leveraged from the repository "springboot.hotelmgmt" - Simple RE
 
 Link to legacy repository : https://github.com/gokulanviswanathan/Spring-Boot-Hotel-Management-System
 
-------------------------
-Reaching out Contributor
-------------------------
+-----------
+Contributor
+-----------
 
 Gokulan Viswanathan
 
